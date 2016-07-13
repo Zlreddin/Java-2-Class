@@ -1,5 +1,4 @@
 
-
 public class Restaurant {
 
 	String restName = "The Winking Skeever";
@@ -14,11 +13,14 @@ public class Restaurant {
 	// The second size is the logical size, which means how many elements are
 	// actually USED in an array. The logical size must be smaller or equal to
 	// the physical size.
+	
+	
  
  
 		Entrée[] entarray = new Entrée[10];
 	int arraylen = entarray.length; // Physical size. Need to print out the
 									// result??????
+
 
 	public String count2() {
 		return arraylen + " Entrées on the menu";
@@ -33,5 +35,8 @@ public class Restaurant {
 		return average /= entarray.length;
 
 	}
+	
+	
+
 
 }
