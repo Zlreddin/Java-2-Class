@@ -2865,3 +2865,18 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-07-13 01:58:07.044
+!MESSAGE Cannot lock C:\Users\Zachary Redding\Documents\GitHub\Java-2-Class\.git\index
+!STACK 0
+org.eclipse.jgit.errors.LockFailedException: Cannot lock C:\Users\Zachary Redding\Documents\GitHub\Java-2-Class\.git\index
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:250)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:327)
+	at org.eclipse.jgit.dircache.DirCache.lock(DirCache.java:293)
+	at org.eclipse.jgit.lib.Repository.lockDirCache(Repository.java:1160)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:148)
+	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2553)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.equinox.security 1 0 2016-07-13 01:58:36.935
+!MESSAGE New keyring password generated. 
