@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ExampleDriver {
+
+	public static void main(String[] args) {
+		
+
+//		Person p1 = new Person("Bob", 30);
+//		Person p2 = new Person();
+//		p2.setName("Susan");
+//		p2.setAge(21);
+//		Person p3 = new Person("Dan", 102);
+//		System.out.println("Name: " + p1.getName() + " Age: " + p1.getAge());
+//		System.out.println("Name: " + p2.getName() + " Age: " + p2.getAge());
+//		System.out.println("Name: " + p3.getName() + " Age: " + p3.getAge());
+		
+
+		Committee com = new Committee();
+		com.setName("AAMMAA");
+		com.addPerson("Bob", 30);
+		com.addPerson("Susan", 21);
+		com.addPerson("Dan", 102);
+		com.addPerson("Joe",  35);
+		com.addPerson("Barb", 70);
+		com.PrintData();
+	}
+	
+	//"has a" aggregation 
+
+}

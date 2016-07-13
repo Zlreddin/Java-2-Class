@@ -1,0 +1,25 @@
+
+public class Restaurant {
+
+	String restName = "The Drunken Skeever";
+	/*
+	 * Camel Case - every other letter except the first one of a new word within
+	 * a phrase is capitalized is the practice of writing compound words or
+	 * phrases such that each word or abbreviation begins with a capital letter
+	 */
+
+	// There are two types of sizes when referring to arrays. One is the
+	// physical size, which means how many elements exist in an array.
+	// The second size is the logical size, which means how many elements are
+	// actually USED in an array. The logical size must be smaller or equal to
+	// the physical size.
+
+	Entrée[] entarray = new Entrée[10];
+	int arraylen = entarray.length; // Physical size. Need to print out the
+									// result??????
+
+	public int count2() {
+		return arraylen;
+	}
+
+}

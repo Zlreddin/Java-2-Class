@@ -1,0 +1,20 @@
+
+public class Entrée {
+
+	private String desc;
+	private int price;
+
+	public Entrée() {
+
+		desc = "";
+		price = 0;
+
+	}
+
+	public Entrée(String d, int p) {
+		desc = d;
+		price = p;
+
+	}
+
+}

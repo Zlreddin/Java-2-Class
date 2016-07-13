@@ -1,0 +1,28 @@
+
+public class Committee {
+
+	private Person [] p = new Person[20];
+	private String name = "";
+	int count = 0;
+	
+	public void setName(String n){
+		name = n;
+	}
+	
+	public String getName(){
+		return name;
+	}
+
+	public void addPerson(String n, int a) {
+		p[count] = new Person(n, a);
+		count++;
+	}
+	
+	public void PrintData(){
+		System.out.println("Committee name: " + name);
+		for(int i = 0; i < count; i++) {
+			System.out.println("\n Name: " + p[i].getName() + "\n Age: " + p[i].getAge());
+		}
+	}
+	
+}

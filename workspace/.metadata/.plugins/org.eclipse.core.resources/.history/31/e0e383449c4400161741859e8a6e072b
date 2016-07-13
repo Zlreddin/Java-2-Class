@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+
+public class DrivingMeBananas {
+
+	public static void main(String[] args) {
+		int f = 2;
+
+		int[][] arrayl = new int[10][6];
+
+		for (int row = 0; row < arrayl.length; row++) {
+			for (int column = 0; column < arrayl[row].length; column++) {
+
+				arrayl[row][column] = f;
+				f += 2;
+				System.out.print(arrayl[row][column] + " ");
+			}
+			System.out.println();
+		}
+		f = 1;
+		ArrayList<Integer> arrayk = new ArrayList<Integer>(); // Creates an
+																// array list
+																// called
+																// "arrayk"
+
+		System.out.println(arrayk.size()); // Prints the entirety of the array
+											// list
+
+		for (int i = 0; i < 12; i++) { // "For" loop that adds 12 odd numbers to
+										// the list counting up from 0
+			arrayk.add(f); // Where to add from
+			f += 2; // What's added
+			System.out.println(arrayk.get(i)); // Prints the Array list as
+												// specified by the above code
+		}
+			arrayk.remove(2);
+			arrayk.remove(5);
+			System.out.println(arrayk.size());
+			
+			
+			StringBuilder build = new StringBuilder();
+			build.append("I ");
+			build.append("dont ");
+			build.append("know ");
+			build.append("how ");
+			build.append(" to code ");
+			build.append("in java!");
+			build.delete(8, 13);
+			System.out.println(build);
+	}
+	
+
+}

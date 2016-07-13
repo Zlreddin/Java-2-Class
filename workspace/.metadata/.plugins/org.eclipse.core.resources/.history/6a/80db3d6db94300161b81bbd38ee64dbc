@@ -1,0 +1,26 @@
+/*  TO DO:
+*  Add your name here!
+*
+*/
+
+public class Lab1Driver {
+	public statci void main (String[] args){
+		// Creates an Organization and assigns the name
+		Organization org = new Organization("ACM");
+
+		// Adds people to the Organization
+		org.addMember("Dan Jones", 18, "Freshman");
+		org.addMember("Susan Tate", 22, "Senior");
+		org.addMember("Brenda Abbott", 20, "Junior");
+		org.addMember("John Mason", 21, "Junior");
+		org.addMember("Michael Ward", 19, "Sophomore");
+		org.addMember("Taylor Ismer", 25, "Senior");
+		org.addMember("Nathan Umbridge", 23, "Senior");
+
+		// Calls the method that Prints the Organization name
+		org.printName();
+
+		// Calls the method that Prints all the Organization members: name, age, and year
+		org.printMembers();
+	}
+}

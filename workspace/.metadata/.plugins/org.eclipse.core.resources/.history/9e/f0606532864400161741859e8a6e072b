@@ -1,0 +1,17 @@
+
+public class ExampDriver {
+	public static void main(String[] args){
+		StringBuilder stB = new StringBuilder();
+		stB.append("Bob ");
+		stB.append("is ");
+		stB.append("a ");
+		stB.append("pretty man!");
+		System.out.println(stB);
+		
+		stB.insert(7, "not ");
+		System.out.println(stB);
+		
+		stB.delete(7, 11);
+		System.out.println(stB);
+	}
+}

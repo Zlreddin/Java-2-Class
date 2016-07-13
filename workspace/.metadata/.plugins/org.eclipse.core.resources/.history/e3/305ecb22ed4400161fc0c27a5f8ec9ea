@@ -1,0 +1,35 @@
+
+public class Restaurant {
+
+		
+		String restName; /* Camel Case - every other letter except the first one of a new word within a phrase is capitalized
+						is the practice of writing compound words or phrases such that each word or abbreviation begins with a capital letter*/
+		
+		restName = "The Drunken Skeever";
+
+		
+		Entrée[] entarray = new Entrée[10];
+		int  entarry.length; 
+//		entarray[0] = new Entrée("Human ribs with a fully loaded baked potatoe", "Rack Of Man", 12.50);
+//		entarray[1] = new Entrée("Lochness Terror", "Head of the Lochness Monster with soup of the day", 3.50);
+//		entarray[2] = new Entrée("Vilod's Special", "Sweet Roll with mead made from Juniper Berries", 7.00);
+//		entarray[3] = new Entrée("The Gourmand", "Brahmin Wellington with Nuka Cola Quantum", 20.00);
+//		entarray[4] = new Entrée("Yum Yum Deviled Eggs", "Pure Dried Whole Deviled Eggs with vodka", 10.00);
+//		entarray[5] = new Entrée("Wasteland Omlet",
+//				"Omlet made of Blamco Mac & Cheese, Crunchy Mutfruit, Deathclaw Egg, and Lakelurk Meat", 99.00);
+//		entarray[6] = new Entrée("Irradiated Salisbury Steak",
+//				"Salisbury Steak that has somewhat survived the nuclear fallout", 5.00);
+//		entarray[7] = new Entrée("Horker and Ash Yam Stew", "Garlic, Ash Yam, and Horker meat mixed into a hardy stew",
+//				9.00);
+//		entarray[8] = new Entrée("McDank",
+//				"Quarter Pounder Burger fused with Homestlye Chicken Sandwich with a Diet Coke", 4.20);
+//		entarray[9] = new Entrée("Ninja Turtle Soup",
+//				"Locally raised sewer turtles cooked into a soup with a side of roasted rat and a free karate lesson",
+//				25.00);
+		for (Entrée count1: entarray){
+			
+		}
+
+	}
+
+}

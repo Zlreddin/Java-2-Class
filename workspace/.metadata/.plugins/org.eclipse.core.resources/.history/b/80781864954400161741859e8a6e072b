@@ -1,0 +1,23 @@
+import java.util.ArrayList;
+
+public class DrivingMeBananas {
+
+	public static void main(String[] args) {
+		int f = 2;
+
+		int[][] arrayl = new int[10][6];
+		
+		for (int row = 0; row < arrayl.length; row++){
+			for (int column = 0; column < arrayl[row].length; column++){
+			System.out.println(arrayl.length[row][column]);
+			arrayl[row][column] = f;
+			f+=2;
+			System.out.print(arrayl[row][column]);
+			}
+		}
+		
+
+	}
+	
+	
+}

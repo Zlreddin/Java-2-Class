@@ -1,0 +1,28 @@
+
+public class Organization {
+	private String Org;
+	// Student array of 15
+	private Student[] Group = new Student[15];
+	// Count to keep track of how many people are assigned to the array
+	private int count = 0;
+
+	public Organization(String n) {
+		Org = n;
+
+	}
+
+	public void printName() {
+		System.out.println(Org);
+		System.out.println();
+	}
+
+	public void printMembers() {
+
+	}
+
+	public void addMember(String Name, int Age, String Year) {
+		Group[count] = new Student(Name, Age, Year);
+		count++;
+	}
+
+}

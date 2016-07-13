@@ -1,0 +1,22 @@
+
+public class SortsDriver {
+
+	public static void main(String[] args) {
+
+	}
+
+	public static void Selection(int[] array) {
+		for(int i = 0; i < array.length - 1; i++){ // outerLoop forces the loop to search/compare from the beginning to one less than the end of the array
+			int currentMin = array[i];				//holder for the minimum value of the array
+			int currentIndex = i;					// holders for i
+			for(int innerLoop = i +1; innerLoop < array.length; innerLoop++);	// innerLoop that searches/compares from +1 from the beginning to the very end		
+				if(currentMin > array[innerLoop]){
+				currentMin = array[innerLoop];
+				currentIndex = innerLoop;
+				}
+				if (currentIndex !=1)array[currentIndex] = array[i];
+				array[i] = currentMin;
+				
+		}
+	}
+}

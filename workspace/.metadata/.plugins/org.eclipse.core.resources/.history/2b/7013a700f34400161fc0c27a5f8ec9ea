@@ -1,0 +1,37 @@
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		Restaurant rest = new Restaurant(); // Instantiates (creates) new restaurant object
+		
+		rest.entarray[0] = new Entrée("Human ribs with a fully loaded baked potatoe", "Rack Of Man", 12.50);
+		rest.entarray[1] = new Entrée("Lochness Terror", "Head of the Lochness Monster with soup of the day", 3.50);
+		rest.entarray[2] = new Entrée("Vilod's Special", "Sweet Roll with mead made from Juniper Berries", 7.00);
+		rest.entarray[3] = new Entrée("The Gourmand", "Brahmin Wellington with Nuka Cola Quantum", 20.00);
+		rest.entarray[4] = new Entrée("Yum Yum Deviled Eggs", "Pure Dried Whole Deviled Eggs with vodka", 10.00);
+		rest.entarray[5] = new Entrée("Wasteland Omlet",
+				"Omlet made of Blamco Mac & Cheese, Crunchy Mutfruit, Deathclaw Egg, and Lakelurk Meat", 99.00);
+		rest.entarray[6] = new Entrée("Irradiated Salisbury Steak",
+				"Salisbury Steak that has somewhat survived the nuclear fallout", 5.00);
+		rest.entarray[7] = new Entrée("Horker and Ash Yam Stew", "Garlic, Ash Yam, and Horker meat mixed into a hardy stew",
+				9.00);
+		rest.entarray[8] = new Entrée("McDank",
+				"Quarter Pounder Burger fused with Homestlye Chicken Sandwich with a Diet Coke", 4.20);
+		rest.entarray[9] = new Entrée("Ninja Turtle Soup",
+				"Locally raised sewer turtles cooked into a soup with a side of roasted rat and a free karate lesson",
+				25.00);
+		System.out.println("Welcome to the Winking Skeever, friend. The Winking Skeever's got warm beds and cold mead. You look like you could use both.");
+		System.out.println("\nThe Winking Skeever");
+		System.out.println(rest.count2());
+		//  1st part initializes the variable "i"; 2nd part is the conditional, makes the loop run; 3rd increment, increasing i by 1 ++
+		for (int i = 0; i < rest.arraylen; i ++){
+			System.out.println(rest.entarray[i].getTitle()+" $"+rest.entarray[i].getPrice()+"\n "+rest.entarray[i].getDesc()); //prints entree array locations
+			
+			
+		}
+		
+
+	}
+
+}

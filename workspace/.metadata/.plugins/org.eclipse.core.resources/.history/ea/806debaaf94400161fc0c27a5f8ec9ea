@@ -1,0 +1,38 @@
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		Restaurant rest = new Restaurant(); // Instantiates (creates) new restaurant object
+		
+		rest.entarray[0] = new Entrée("Human ribs with a fully loaded baked potatoe", "Rack Of Man", 12.50);
+		rest.entarray[1] = new Entrée("Head of the Lochness Monster with soup of the day", "Lochness Terror", 3.50);
+		rest.entarray[2] = new Entrée("Sweet Roll with mead made from Juniper Berries", "Vilod's Special", 7.00);
+		rest.entarray[3] = new Entrée("Brahmin Wellington with Nuka Cola Quantum", "The Gourmand", 20.00);
+		rest.entarray[4] = new Entrée("Pure Dried Whole Deviled Eggs with vodka", "Yum Yum Deviled", 10.00);
+		rest.entarray[5] = new Entrée("Omlet made of Blamco Mac & Cheese, Crunchy Mutfruit, Deathclaw Egg, and Lakelurk Meat",
+				"Wasteland Omlet", 99.00);
+		rest.entarray[6] = new Entrée("Salisbury Steak that has somewhat survived the nuclear fallout",
+				"Irradiated Salisbury Steak", 5.00);
+		rest.entarray[7] = new Entrée("Garlic, Ash Yam, and Horker meat mixed into a hardy stew", "Horker and Ash Yam Stew",
+				9.00);
+		rest.entarray[8] = new Entrée("Quarter Pounder Burger fused with Homestlye Chicken Sandwich with a Diet Coke",
+				"McDank", 4.20);
+		rest.entarray[9] = new Entrée("Locally raised sewer turtles cooked into a soup with a side of roasted rat and a free karate lesson",
+				"Ninja Turtle Soup",
+				25.00);
+		System.out.println("Welcome to the Winking Skeever, friend. The Winking Skeever's got warm beds and cold mead. You look like you could use both.");
+		System.out.println("\nThe Winking Skeever");
+		System.out.println(rest.count2());
+		System.out.println();
+		//  1st part initializes the variable "i"; 2nd part is the conditional, makes the loop run; 3rd increment, increasing i by 1 ++
+		for (int i = 0; i < rest.arraylen; i ++){
+			System.out.println(rest.entarray[i].getTitle()+" $"+(rest.entarray[i].getPrice())+" \n"+rest.entarray[i].getDesc()+"\n"); //prints entree array locations
+			
+			
+		}
+		System.out.println("Average price of an entrée\n$"+rest.avgPrice());
+		System.out.println("\nRemember the Winking Skeever next time you're footsore.");
+	}
+
+}
